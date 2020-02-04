@@ -9,3 +9,10 @@ puts "Exercise 6"
 puts "----------"
 
 # Your code goes here ...
+
+@store1 = Store.find_by(id: 1)
+@store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
+@store1.employees.create(first_name: "Edi", last_name: "Yang", hourly_rate: 5)
+@store2 = Store.find_by(id: 2)
+@store2.employees.create(first_name: "John", last_name: "Doe", hourly_rate: 1)
+@store2.employees.create(first_name: "some", last_name: "one", hourly_rate: 150)
